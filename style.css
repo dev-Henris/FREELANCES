@@ -10,25 +10,49 @@
 body {
 
     background: linear-gradient(342deg, rgba(71, 10, 10, 1) 0%, rgba(203, 140, 162, 1) 60%);
-    height: 100vh;
+    height: 149vh;
+    
 
 }
 
+.contato-link { 
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.contato-link a { 
 
+    width: 46px;
+    border: none;
+    display: flex;
+}
+
+.contato-link a:hover { 
+    background-color: transparent;
+}
 
 img {
     display: block;
-    margin: 0 auto;
+   margin: 0 auto;
     width: 300px;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-right: 50px;
 
+}
+
+div.content { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 a {
@@ -39,14 +63,15 @@ a {
     font-size: 25px;
     font-weight: 100;
     cursor: pointer;
-    background-color: transparent;
+    background: transparent;
     padding: 10px 20px;
     position: relative;
     text-align: center;
     text-decoration: none;
     color: black;
-border: 2px solid;
-border-color: rgba(71, 10, 10, 1);
+    border: 2px solid;
+    border-color: rgba(71, 10, 10, 1);
+    
 
 
 }
@@ -56,7 +81,7 @@ a:hover {
     background-color: rgba(71, 10, 10, 1);
     color: #FFFF;
     transform: translateY(-10px);
-    font-size: 28px;
+    font-size: 23px;
     transition: 0.5s ease-in;
 
 }
@@ -67,14 +92,18 @@ a:active {
     background-color: rgba(203, 140, 162, 1);
 }
 
+
 h3 {
     margin: 15px;
     text-align: center;
     font-size: 35px;
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
 }
 
-.img-insta, .img-wpp, .img-maps {
+div .img-insta,.img-wpp,.img-maps{
     width: 30px;
     height: 30px;
     position: absolute;
@@ -82,14 +111,119 @@ h3 {
     bottom: 6px;
 }
 
-.img-calendar { 
+.img-calendar {
     width: 30px;
     height: 30px;
     position: absolute;
     right: 130px;
     bottom: 6px;
-    border-radius: 9000px;
+
+}
+
+h4 { 
+    font-size: 25px;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+h6 { 
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+@media screen and (max-width:570px) {
+
+body { 
+
+    height: 121vh;
 }
 
 
-@media screen {}
+h3 { 
+width: auto;
+font-size: 27px;
+margin-left: 40px;
+} 
+
+img { 
+
+width: 50%;
+display: block;
+margin: 25px auto;
+
+}
+
+a { 
+width: 50%;
+font-size: 100%;
+
+}
+
+div .img-insta,.img-wpp,.img-maps{
+    bottom: -15px;
+    position: absolute;
+    width: auto;
+    right: 42px;
+}
+
+
+.img-calendar {
+    position: absolute;
+    width: auto;
+    right: 40px;
+    bottom: -12px;
+}
+
+div.content { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a:hover {
+    
+        opacity: 0.7;
+        background-color: rgba(71, 10, 10, 1);
+        color: #FFFF;
+        font-size: 16px;
+        transition: 0.5s ease-in;
+    
+    }
+    
+
+
+
+
+
+}
+
+@media screen and (max-width:515px) {
+
+
+body { 
+
+    height: 125vh;
+}
+
+    div .img-insta,.img-wpp,.img-maps{
+      display: none;
+    }
+    
+    
+    .img-calendar {
+       display: none;
+    }
+
+    div.content { 
+        display: flex;
+        align-items: center;
+        margin-left: 32px;
+        flex-direction: column;
+    }
+
+}
+
+
+
